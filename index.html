@@ -18,8 +18,6 @@ nav{position:fixed;top:0;width:100%;z-index:100;padding:1.2rem 2rem;display:flex
 .nav-links a{color:var(--muted);text-decoration:none;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;transition:color .2s;}
 .nav-links a:hover{color:var(--accent);}
 section{position:relative;z-index:1;}
-
-/* HERO */
 .hero{min-height:100vh;display:flex;align-items:center;padding:6rem 2rem 4rem;position:relative;overflow:hidden;}
 .hero-grid{position:absolute;inset:0;background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);background-size:60px 60px;opacity:.25;}
 .hero-glow{position:absolute;top:-20%;left:-10%;width:60%;height:60%;background:radial-gradient(ellipse,rgba(0,245,160,.07) 0%,transparent 70%);pointer-events:none;}
@@ -32,15 +30,17 @@ h1.name .dim{color:var(--muted);}
 .hero-title{font-family:'Space Mono',monospace;font-size:clamp(.85rem,1.8vw,1rem);color:var(--accent2);margin-bottom:1.5rem;}
 .hero-bio{max-width:560px;color:var(--muted);line-height:1.85;font-size:.92rem;margin-bottom:2.5rem;}
 .hero-btns{display:flex;gap:1rem;flex-wrap:wrap;}
-.btn-primary{background:var(--accent);color:#0a0a0f;padding:.75rem 1.75rem;border-radius:4px;font-family:'Space Mono',monospace;font-size:.78rem;font-weight:700;letter-spacing:.05em;border:none;cursor:pointer;transition:all .2s;text-decoration:none;display:inline-block;}
+.btn-primary{background:var(--accent);color:#0a0a0f;padding:.75rem 1.75rem;border-radius:4px;font-family:'Space Mono',monospace;font-size:.78rem;font-weight:700;letter-spacing:.05em;border:none;cursor:pointer;transition:all .2s;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;}
 .btn-primary:hover{background:#00c87e;transform:translateY(-2px);}
-.btn-outline{background:transparent;color:var(--text);padding:.75rem 1.75rem;border-radius:4px;font-family:'Space Mono',monospace;font-size:.78rem;letter-spacing:.05em;border:1px solid var(--border);cursor:pointer;transition:all .2s;text-decoration:none;display:inline-block;}
+.btn-outline{background:transparent;color:var(--text);padding:.75rem 1.75rem;border-radius:4px;font-family:'Space Mono',monospace;font-size:.78rem;letter-spacing:.05em;border:1px solid var(--border);cursor:pointer;transition:all .2s;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;}
 .btn-outline:hover{border-color:var(--accent);color:var(--accent);}
+.btn-resume{background:transparent;color:var(--accent);padding:.75rem 1.75rem;border-radius:4px;font-family:'Space Mono',monospace;font-size:.78rem;letter-spacing:.05em;border:1px solid rgba(0,245,160,.4);cursor:pointer;transition:all .2s;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;}
+.btn-resume:hover{background:rgba(0,245,160,.08);transform:translateY(-2px);}
+.btn-resume-view{background:transparent;color:var(--accent2);padding:.75rem 1.75rem;border-radius:4px;font-family:'Space Mono',monospace;font-size:.78rem;letter-spacing:.05em;border:1px solid rgba(0,194,255,.4);cursor:pointer;transition:all .2s;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;}
+.btn-resume-view:hover{background:rgba(0,194,255,.08);transform:translateY(-2px);}
 .hero-stats{display:flex;gap:3rem;margin-top:3.5rem;padding-top:2.5rem;border-top:1px solid var(--border);}
 .stat-num{font-size:2rem;font-weight:800;color:var(--accent);font-family:'Space Mono',monospace;}
 .stat-label{font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-top:.2rem;}
-
-/* ABOUT */
 .about{padding:6rem 2rem;background:var(--bg2);}
 .section-inner{max-width:920px;margin:0 auto;}
 .section-tag{font-family:'Space Mono',monospace;font-size:.68rem;color:var(--accent);letter-spacing:.2em;text-transform:uppercase;margin-bottom:.75rem;display:flex;align-items:center;gap:.75rem;}
@@ -54,8 +54,6 @@ h2{font-size:2.1rem;font-weight:800;margin-bottom:2rem;letter-spacing:-.02em;}
 .detail-icon svg{width:16px;height:16px;stroke:var(--accent);fill:none;stroke-width:2;}
 .detail-val{font-size:.88rem;}
 .detail-key{font-size:.72rem;color:var(--muted);}
-
-/* SKILLS */
 .skills{padding:6rem 2rem;}
 .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;margin-top:2.5rem;}
 .skill-card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:1.5rem;transition:border-color .2s,transform .2s;}
@@ -63,8 +61,6 @@ h2{font-size:2.1rem;font-weight:800;margin-bottom:2rem;letter-spacing:-.02em;}
 .skill-cat{font-family:'Space Mono',monospace;font-size:.68rem;color:var(--accent);letter-spacing:.15em;text-transform:uppercase;margin-bottom:1rem;}
 .skill-tags{display:flex;flex-wrap:wrap;gap:.5rem;}
 .tag{background:rgba(255,255,255,.05);color:var(--text);border:1px solid var(--border);border-radius:3px;padding:.3rem .7rem;font-family:'Space Mono',monospace;font-size:.68rem;letter-spacing:.04em;}
-
-/* EXPERIENCE */
 .experience{padding:6rem 2rem;background:var(--bg2);}
 .exp-card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:2rem;margin-top:2.5rem;position:relative;overflow:hidden;}
 .exp-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(to bottom,var(--accent),var(--accent2));}
@@ -76,8 +72,6 @@ h2{font-size:2.1rem;font-weight:800;margin-bottom:2rem;letter-spacing:-.02em;}
 .exp-achievements li{color:var(--muted);font-size:.88rem;line-height:1.75;padding-left:1.2rem;position:relative;}
 .exp-achievements li::before{content:'▸';position:absolute;left:0;color:var(--accent);font-size:.7rem;top:.15rem;}
 .achievement-highlight{color:var(--accent);font-weight:600;}
-
-/* PROJECTS */
 .projects{padding:6rem 2rem;}
 .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:2.5rem;}
 .project-card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:1.5rem;transition:all .25s;display:flex;flex-direction:column;gap:1rem;}
@@ -88,21 +82,22 @@ h2{font-size:2.1rem;font-weight:800;margin-bottom:2rem;letter-spacing:-.02em;}
 .project-desc{color:var(--muted);font-size:.85rem;line-height:1.75;flex:1;}
 .project-tags{display:flex;flex-wrap:wrap;gap:.4rem;}
 .project-tag{background:rgba(0,245,160,.08);color:var(--accent);border:1px solid rgba(0,245,160,.2);border-radius:3px;padding:.2rem .6rem;font-family:'Space Mono',monospace;font-size:.64rem;}
-
-/* CERTIFICATIONS */
 .certs{padding:6rem 2rem;background:var(--bg2);}
 .certs-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:2.5rem;}
 .cert-card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:1.5rem;display:flex;gap:1.2rem;align-items:flex-start;transition:all .2s;}
 .cert-card:hover{border-color:var(--accent2);transform:translateY(-3px);}
 .cert-badge{width:48px;height:48px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Space Mono',monospace;font-size:.65rem;font-weight:700;text-align:center;line-height:1.3;}
 .cert-badge.azure{background:rgba(0,120,212,.12);color:#0078d4;border:1px solid rgba(0,120,212,.25);}
-.cert-badge.ai{background:rgba(0,245,160,.1);color:var(--accent);border:1px solid rgba(0,245,160,.2);}
 .cert-badge.wipro{background:rgba(138,43,226,.12);color:#a855f7;border:1px solid rgba(138,43,226,.25);}
+.cert-badge.ibm{background:rgba(15,98,254,.12);color:#0f62fe;border:1px solid rgba(15,98,254,.25);}
+.cert-badge.udemy{background:rgba(167,97,241,.12);color:#a761f1;border:1px solid rgba(167,97,241,.25);}
+.cert-badge.hr{background:rgba(0,194,133,.12);color:#00c285;border:1px solid rgba(0,194,133,.25);}
+.cert-badge.lytics{background:rgba(255,107,53,.12);color:#ff6b35;border:1px solid rgba(255,107,53,.25);}
 .cert-name{font-size:.95rem;font-weight:700;margin-bottom:.3rem;}
 .cert-issuer{font-family:'Space Mono',monospace;font-size:.7rem;color:var(--accent);letter-spacing:.05em;margin-bottom:.4rem;}
-.cert-date{font-size:.75rem;color:var(--muted);}
-
-/* CONTACT */
+.cert-date{font-size:.75rem;color:var(--muted);margin-bottom:.6rem;}
+.verify-btn{display:inline-block;font-family:'Space Mono',monospace;font-size:.68rem;color:var(--accent2);border:1px solid rgba(0,194,255,.25);border-radius:3px;padding:.2rem .6rem;text-decoration:none;transition:all .2s;}
+.verify-btn:hover{background:rgba(0,194,255,.1);border-color:var(--accent2);}
 .contact{padding:6rem 2rem;}
 .contact-inner{max-width:700px;margin:0 auto;text-align:center;}
 .contact-inner h2{font-size:2.3rem;margin-bottom:1rem;}
@@ -111,20 +106,16 @@ h2{font-size:2.1rem;font-weight:800;margin-bottom:2rem;letter-spacing:-.02em;}
 .contact-link{display:flex;align-items:center;gap:.6rem;background:var(--card);border:1px solid var(--border);border-radius:6px;padding:.9rem 1.4rem;color:var(--text);text-decoration:none;font-size:.82rem;transition:all .2s;}
 .contact-link:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px);}
 .contact-link svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;}
+.contact-link.resume-dl{border-color:rgba(0,245,160,.3);color:var(--accent);}
+.contact-link.resume-dl:hover{background:rgba(0,245,160,.08);}
+.contact-link.resume-view{border-color:rgba(0,194,255,.3);color:var(--accent2);}
+.contact-link.resume-view:hover{background:rgba(0,194,255,.08);}
 footer{padding:2rem;text-align:center;font-family:'Space Mono',monospace;font-size:.68rem;color:var(--muted);border-top:1px solid var(--border);}
-
-@media(max-width:640px){
-  .about-grid{grid-template-columns:1fr;}
-  .hero-stats{gap:1.5rem;}
-  .exp-header{flex-direction:column;}
-  .nav-links{gap:1rem;}
-  .nav-links a{font-size:.65rem;}
-}
+@media(max-width:640px){.about-grid{grid-template-columns:1fr;}.hero-stats{gap:1.5rem;}.exp-header{flex-direction:column;}.nav-links{gap:1rem;}.nav-links a{font-size:.65rem;}}
 </style>
 </head>
 <body>
 <div class="noise"></div>
-
 <nav>
   <div class="logo">&lt;<span>RanuVerma</span>/&gt;</div>
   <div class="nav-links">
@@ -137,7 +128,6 @@ footer{padding:2rem;text-align:center;font-family:'Space Mono',monospace;font-si
   </div>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-grid"></div>
   <div class="hero-glow"></div>
@@ -150,16 +140,17 @@ footer{padding:2rem;text-align:center;font-family:'Space Mono',monospace;font-si
     <div class="hero-btns">
       <a class="btn-primary" href="#exp">View Experience</a>
       <a class="btn-outline" href="#contact">Get in Touch</a>
+      <a class="btn-resume" href="resume.pdf" download="Ranu_Kumar_Verma_Resume.pdf">⬇ Download Resume</a>
+      <a class="btn-resume-view" href="resume.pdf" target="_blank">📄 View Resume</a>
     </div>
     <div class="hero-stats">
       <div><div class="stat-num">3.5+</div><div class="stat-label">Years Exp.</div></div>
       <div><div class="stat-num">180+</div><div class="stat-label">Systems Migrated</div></div>
-      <div><div class="stat-num">30%</div><div class="stat-label">Perf. Gains</div></div>
+      <div><div class="stat-num">14+</div><div class="stat-label">Certifications</div></div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
 <section class="about" id="about">
   <div class="section-inner">
     <div class="section-tag">About Me</div>
@@ -181,7 +172,11 @@ footer{padding:2rem;text-align:center;font-family:'Space Mono',monospace;font-si
         </div>
         <div class="detail-row">
           <div class="detail-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-          <div><div class="detail-val">ranuverma7599@gmail.com</div><div class="detail-key">Email</div></div>
+          <div><a href="mailto:ranuverma7599@gmail.com" style="color:var(--accent2);text-decoration:none;font-size:.88rem;">ranuverma7599@gmail.com</a><div class="detail-key">Email</div></div>
+        </div>
+        <div class="detail-row">
+          <div class="detail-icon"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
+          <div><a href="https://www.linkedin.com/in/ranuverma759/" target="_blank" style="color:var(--accent2);text-decoration:none;font-size:.88rem;">linkedin.com/in/ranuverma759</a><div class="detail-key">LinkedIn</div></div>
         </div>
         <div class="detail-row">
           <div class="detail-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.16l2.54-.01c.39 0 .74.26.83.64.28 1.13.74 2.21 1.36 3.18.15.23.1.54-.13.72L6.73 6.66a16.1 16.1 0 0 0 6.29 6.29l1.17-1.47c.18-.23.49-.28.72-.13.97.62 2.05 1.08 3.18 1.36.38.1.64.45.64.84z"/></svg></div>
@@ -192,7 +187,6 @@ footer{padding:2rem;text-align:center;font-family:'Space Mono',monospace;font-si
   </div>
 </section>
 
-<!-- SKILLS -->
 <section class="skills" id="skills">
   <div class="section-inner">
     <div class="section-tag">Skills</div>
@@ -226,7 +220,6 @@ footer{padding:2rem;text-align:center;font-family:'Space Mono',monospace;font-si
   </div>
 </section>
 
-<!-- EXPERIENCE -->
 <section class="experience" id="exp">
   <div class="section-inner">
     <div class="section-tag">Experience</div>
@@ -252,7 +245,6 @@ footer{padding:2rem;text-align:center;font-family:'Space Mono',monospace;font-si
   </div>
 </section>
 
-<!-- KEY PROJECTS -->
 <section class="projects" id="projects">
   <div class="section-inner">
     <div class="section-tag">Key Work</div>
@@ -280,7 +272,6 @@ footer{padding:2rem;text-align:center;font-family:'Space Mono',monospace;font-si
   </div>
 </section>
 
-<!-- CERTIFICATIONS -->
 <section class="certs" id="certs">
   <div class="section-inner">
     <div class="section-tag">Certifications</div>
@@ -288,33 +279,133 @@ footer{padding:2rem;text-align:center;font-family:'Space Mono',monospace;font-si
     <div class="certs-list">
       <div class="cert-card">
         <div class="cert-badge azure">AZ-900</div>
-        <div>
+        <div style="flex:1;">
           <div class="cert-name">Azure Fundamentals</div>
           <div class="cert-issuer">Microsoft Azure</div>
           <div class="cert-date">AZ-900 · Verified Certification</div>
         </div>
       </div>
       <div class="cert-card">
-        <div class="cert-badge ai">AI</div>
-        <div>
-          <div class="cert-name">Generative AI &amp; LLMs</div>
-          <div class="cert-issuer">Self-Directed Learning</div>
-          <div class="cert-date">Prompt Engineering · Cloud-native Architecture</div>
+        <div class="cert-badge wipro">W</div>
+        <div style="flex:1;">
+          <div class="cert-name">Generative AI Fundamentals &amp; Responsible Usage</div>
+          <div class="cert-issuer">Wipro</div>
+          <div class="cert-date">Issued Jul 2023 · Skills: Generative AI</div>
+          <a class="verify-btn" href="https://cert.diceid.com/wic/cid/EuzXlR" target="_blank">Verify ↗</a>
         </div>
       </div>
       <div class="cert-card">
-        <div class="cert-badge wipro">W</div>
-        <div>
-          <div class="cert-name">Advanced Microservices Design</div>
-          <div class="cert-issuer">Wipro Internal Training</div>
-          <div class="cert-date">Spring Boot · Java Performance Optimisation</div>
+        <div class="cert-badge ibm">IBM</div>
+        <div style="flex:1;">
+          <div class="cert-name">Tools for Data Science</div>
+          <div class="cert-issuer">IBM</div>
+          <div class="cert-date">Issued Feb 2023 · Skills: Jupyter, SQL</div>
+          <a class="verify-btn" href="https://www.credly.com/go/PHy0MW2f" target="_blank">Verify ↗</a>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-badge ibm">IBM</div>
+        <div style="flex:1;">
+          <div class="cert-name">Data Science Orientation</div>
+          <div class="cert-issuer">IBM</div>
+          <div class="cert-date">Issued Feb 2023</div>
+          <a class="verify-btn" href="https://www.credly.com/go/1iD46oge" target="_blank">Verify ↗</a>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-badge ibm">IBM</div>
+        <div style="flex:1;">
+          <div class="cert-name">Python Project for Data Science</div>
+          <div class="cert-issuer">IBM</div>
+          <div class="cert-date">Issued Feb 2023 · Skills: Jupyter, Data Analysis</div>
+          <a class="verify-btn" href="https://www.credly.com/go/lSJEUIrs" target="_blank">Verify ↗</a>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-badge ibm">IBM</div>
+        <div style="flex:1;">
+          <div class="cert-name">Python for Data Science and AI</div>
+          <div class="cert-issuer">IBM</div>
+          <div class="cert-date">Issued Jan 2023 · Skills: Jupyter, Matplotlib</div>
+          <a class="verify-btn" href="https://www.credly.com/go/GXAKp8CK" target="_blank">Verify ↗</a>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-badge ibm">IBM</div>
+        <div style="flex:1;">
+          <div class="cert-name">Querying Databases with SQL</div>
+          <div class="cert-issuer">IBM</div>
+          <div class="cert-date">Issued Jan 2023 · Skills: SQL</div>
+          <a class="verify-btn" href="https://www.credly.com/go/4AACHJTp" target="_blank">Verify ↗</a>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-badge udemy">U</div>
+        <div style="flex:1;">
+          <div class="cert-name">Python for Data Science &amp; ML Bootcamp</div>
+          <div class="cert-issuer">Udemy</div>
+          <div class="cert-date">Issued Dec 2022 · Skills: Jupyter, Mathematics</div>
+          <a class="verify-btn" href="https://ude.my/UC-da302270-6fe9-49e1-93d4-325ec525f1fb/" target="_blank">Verify ↗</a>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-badge udemy">U</div>
+        <div style="flex:1;">
+          <div class="cert-name">Machine Learning – From Basics to Advanced</div>
+          <div class="cert-issuer">Udemy</div>
+          <div class="cert-date">Skills: Machine Learning, AI</div>
+          <a class="verify-btn" href="https://ude.my/UC-e6990c47-5955-49d0-a431-735ddc540c60" target="_blank">Verify ↗</a>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-badge hr">HR</div>
+        <div style="flex:1;">
+          <div class="cert-name">Problem Solving (Intermediate)</div>
+          <div class="cert-issuer">HackerRank</div>
+          <div class="cert-date">Issued Dec 2022 · ID: 37C4D7645C17</div>
+          <a class="verify-btn" href="https://www.hackerrank.com/certificates/iframe/37c4d7645c17" target="_blank">Verify ↗</a>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-badge hr">HR</div>
+        <div style="flex:1;">
+          <div class="cert-name">SQL (Advanced)</div>
+          <div class="cert-issuer">HackerRank</div>
+          <div class="cert-date">Issued Jan 2023 · ID: 14F02E12EE0A</div>
+          <a class="verify-btn" href="https://www.hackerrank.com/certificates/14f02e12ee0a" target="_blank">Verify ↗</a>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-badge hr">HR</div>
+        <div style="flex:1;">
+          <div class="cert-name">Python</div>
+          <div class="cert-issuer">HackerRank</div>
+          <div class="cert-date">Issued Dec 2022 · ID: 919BEF393953</div>
+          <a class="verify-btn" href="https://www.hackerrank.com/certificates/iframe/919bef393953" target="_blank">Verify ↗</a>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-badge hr">HR</div>
+        <div style="flex:1;">
+          <div class="cert-name">Java</div>
+          <div class="cert-issuer">HackerRank</div>
+          <div class="cert-date">ID: D6487536D107</div>
+          <a class="verify-btn" href="https://www.hackerrank.com/certificates/d6487536d107" target="_blank">Verify ↗</a>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-badge lytics">L</div>
+        <div style="flex:1;">
+          <div class="cert-name">Lytics CDP Enthusiast</div>
+          <div class="cert-issuer">Lytics</div>
+          <div class="cert-date">Issued Dec 2022 · Skills: Lytics</div>
+          <a class="verify-btn" href="https://lytics-partner-academy.workramp.io/certificate/r1hCnCwFqw" target="_blank">Verify ↗</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
 <section class="contact" id="contact">
   <div class="section-inner">
     <div class="contact-inner">
@@ -325,11 +416,17 @@ footer{padding:2rem;text-align:center;font-family:'Space Mono',monospace;font-si
         <a class="contact-link" href="mailto:ranuverma7599@gmail.com">
           <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Email Me
         </a>
-        <a class="contact-link" href="https://linkedin.com/in/ranuverma759" target="_blank">
+        <a class="contact-link" href="https://www.linkedin.com/in/ranuverma759/" target="_blank">
           <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn
         </a>
         <a class="contact-link" href="tel:+919012691357">
           <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.16l2.54-.01c.39 0 .74.26.83.64.28 1.13.74 2.21 1.36 3.18.15.23.1.54-.13.72L6.73 6.66a16.1 16.1 0 0 0 6.29 6.29l1.17-1.47c.18-.23.49-.28.72-.13.97.62 2.05 1.08 3.18 1.36.38.1.64.45.64.84z"/></svg>+91 90126 91357
+        </a>
+        <a class="contact-link resume-dl" href="resume.pdf" download="Ranu_Kumar_Verma_Resume.pdf">
+          <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download Resume
+        </a>
+        <a class="contact-link resume-view" href="resume.pdf" target="_blank">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>View Resume
         </a>
       </div>
     </div>
@@ -337,6 +434,5 @@ footer{padding:2rem;text-align:center;font-family:'Space Mono',monospace;font-si
 </section>
 
 <footer>&copy; 2026 Ranu Kumar Verma · Java Backend Developer · Bengaluru, India</footer>
-
 </body>
 </html>
