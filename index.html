@@ -15,7 +15,7 @@ nav{position:fixed;top:0;width:100%;z-index:100;padding:1.2rem 2rem;display:flex
 .logo{font-family:'Space Mono',monospace;font-size:.95rem;color:var(--accent);letter-spacing:.05em;}
 .logo span{color:var(--text);}
 .nav-links{display:flex;gap:1.8rem;}
-.nav-links a{color:var(--muted);text-decoration:none;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;transition:color .2s;}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;transition:color .2s;cursor:pointer;}
 .nav-links a:hover{color:var(--accent);}
 section{position:relative;z-index:1;}
 .hero{min-height:100vh;display:flex;align-items:center;padding:6rem 2rem 4rem;position:relative;overflow:hidden;}
@@ -119,12 +119,12 @@ footer{padding:2rem;text-align:center;font-family:'Space Mono',monospace;font-si
 <nav>
   <div class="logo">&lt;<span>RanuVerma</span>/&gt;</div>
   <div class="nav-links">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#exp">Experience</a>
-    <a href="#projects">Work</a>
-    <a href="#certs">Certs</a>
-    <a href="#contact">Contact</a>
+    <a onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">About</a>
+    <a onclick="document.getElementById('skills').scrollIntoView({behavior:'smooth'})">Skills</a>
+    <a onclick="document.getElementById('exp').scrollIntoView({behavior:'smooth'})">Experience</a>
+    <a onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">Work</a>
+    <a onclick="document.getElementById('certs').scrollIntoView({behavior:'smooth'})">Certs</a>
+    <a onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact</a>
   </div>
 </nav>
 
@@ -138,10 +138,10 @@ footer{padding:2rem;text-align:center;font-family:'Space Mono',monospace;font-si
     <div class="hero-title">&gt; Java Backend Developer &amp; Software Engineer</div>
     <p class="hero-bio">Results-driven Java Backend Developer with 3.5+ years of experience designing scalable, high-performance enterprise applications for global financial clients. Expert in Spring Boot microservices, RESTful APIs, and CI/CD automation.</p>
     <div class="hero-btns">
-      <a class="btn-primary" href="#exp">View Experience</a>
-      <a class="btn-outline" href="#contact">Get in Touch</a>
-      <a class="btn-resume" href="resume.pdf" download="Ranu_Kumar_Verma_Resume.pdf">⬇ Download Resume</a>
-      <a class="btn-resume-view" href="resume.pdf" target="_blank">📄 View Resume</a>
+      <button class="btn-primary" onclick="document.getElementById('exp').scrollIntoView({behavior:'smooth'})">View Experience</button>
+      <button class="btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get in Touch</button>
+      <button class="btn-resume" onclick="window.location.href='resume.pdf'">⬇ Download Resume</button>
+      <button class="btn-resume-view" onclick="window.open('resume.pdf','_blank')">📄 View Resume</button>
     </div>
     <div class="hero-stats">
       <div><div class="stat-num">3.5+</div><div class="stat-label">Years Exp.</div></div>
@@ -172,7 +172,7 @@ footer{padding:2rem;text-align:center;font-family:'Space Mono',monospace;font-si
         </div>
         <div class="detail-row">
           <div class="detail-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-          <div><a href="mailto:ranuverma7599@gmail.com" style="color:var(--accent2);text-decoration:none;font-size:.88rem;">ranuverma7599@gmail.com</a><div class="detail-key">Email</div></div>
+          <div><a href="/cdn-cgi/l/email-protection#c4b6a5aab1b2a1b6a9a5f3f1fdfd84a3a9a5ada8eaa7aba9" style="color:var(--accent2);text-decoration:none;font-size:.88rem;"><span class="__cf_email__" data-cfemail="6416050a11120116090553515d5d240309050d084a070b09">[email&#160;protected]</span></a><div class="detail-key">Email</div></div>
         </div>
         <div class="detail-row">
           <div class="detail-icon"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
@@ -413,7 +413,7 @@ footer{padding:2rem;text-align:center;font-family:'Space Mono',monospace;font-si
       <h2>Let's Build<br/>Something Great</h2>
       <p class="contact-sub">Open to new roles, freelance projects, or just a good engineering conversation. My inbox is always open.</p>
       <div class="contact-links">
-        <a class="contact-link" href="mailto:ranuverma7599@gmail.com">
+        <a class="contact-link" href="/cdn-cgi/l/email-protection#b0c2d1dec5c6d5c2ddd187858989f0d7ddd1d9dc9ed3dfdd">
           <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Email Me
         </a>
         <a class="contact-link" href="https://www.linkedin.com/in/ranuverma759/" target="_blank">
@@ -422,17 +422,8 @@ footer{padding:2rem;text-align:center;font-family:'Space Mono',monospace;font-si
         <a class="contact-link" href="tel:+919012691357">
           <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.16l2.54-.01c.39 0 .74.26.83.64.28 1.13.74 2.21 1.36 3.18.15.23.1.54-.13.72L6.73 6.66a16.1 16.1 0 0 0 6.29 6.29l1.17-1.47c.18-.23.49-.28.72-.13.97.62 2.05 1.08 3.18 1.36.38.1.64.45.64.84z"/></svg>+91 90126 91357
         </a>
-        <a class="contact-link resume-dl" href="resume.pdf" download="Ranu_Kumar_Verma_Resume.pdf">
+        <a class="contact-link resume-dl" onclick="window.location.href='resume.pdf'" style="cursor:pointer;">
           <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download Resume
         </a>
-        <a class="contact-link resume-view" href="resume.pdf" target="_blank">
-          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>View Resume
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>&copy; 2026 Ranu Kumar Verma · Java Backend Developer · Bengaluru, India</footer>
-</body>
-</html>
+        <a class="contact-link resume-view" onclick="window.open('resume.pdf','_blank')" style="cursor:pointer;">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="
